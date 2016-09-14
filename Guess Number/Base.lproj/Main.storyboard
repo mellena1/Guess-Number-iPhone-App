@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guess_Number" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlx-5k-H63">
+                                <rect key="frame" x="0.0" y="0.0" width="283" height="489"/>
+                                <animations/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l7H-RV-4bl">
+                                <rect key="frame" x="72" y="230" width="97" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="rNQ-KO-bpH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I suggest guessing: 50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljt-d8-bgu">
+                                <rect key="frame" x="37" y="106" width="173" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Number is between 1 and 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jI1-4o-PPg">
+                                <rect key="frame" x="16" y="77" width="227" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You have 5 guesses remaining." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qa-mF-pqb">
+                                <rect key="frame" x="11" y="135" width="236" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="                 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSF-5h-nMX">
+                                <rect key="frame" x="23" y="157" width="236" height="27"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Guess Number Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mME-Hf-LEu">
+                                <rect key="frame" x="14" y="48" width="231" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter a number:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfC-Tt-xiI">
+                                <rect key="frame" x="62" y="192" width="122" height="20"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dni-Dd-ahC">
+                                <rect key="frame" x="75" y="275" width="91" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="J96-QQ-vyr"/>
+                                    <constraint firstAttribute="height" constant="30" id="vvm-we-ktd"/>
+                                </constraints>
+                                <state key="normal" title="Enter"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="enterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ubH-gP-8eM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rlx-5k-H63" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="469-zf-iCI"/>
+                            <constraint firstItem="QSF-5h-nMX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4Vi-BS-I75"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mME-Hf-LEu" secondAttribute="trailing" id="4jY-1j-cyU"/>
+                            <constraint firstItem="bfC-Tt-xiI" firstAttribute="top" secondItem="QSF-5h-nMX" secondAttribute="bottom" constant="20" id="5K8-qo-jql"/>
+                            <constraint firstItem="Rlx-5k-H63" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-25" id="5oV-bu-xnw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jI1-4o-PPg" secondAttribute="trailing" id="7jS-fJ-Yzt"/>
+                            <constraint firstItem="3qa-mF-pqb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9FE-8c-hw3"/>
+                            <constraint firstItem="Rlx-5k-H63" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9cM-DE-bex"/>
+                            <constraint firstItem="l7H-RV-4bl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9os-Qr-jiR"/>
+                            <constraint firstItem="bfC-Tt-xiI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BaT-xR-fHY"/>
+                            <constraint firstItem="bfC-Tt-xiI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D0g-h3-mX9"/>
+                            <constraint firstItem="l7H-RV-4bl" firstAttribute="top" secondItem="bfC-Tt-xiI" secondAttribute="bottom" constant="5" id="GLD-7D-c6Z"/>
+                            <constraint firstItem="mME-Hf-LEu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="IlK-Pj-AKa"/>
+                            <constraint firstItem="jI1-4o-PPg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KlP-qS-tfH"/>
+                            <constraint firstItem="QSF-5h-nMX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lia-fa-v8S"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rlx-5k-H63" secondAttribute="bottom" id="MVY-0b-sF0"/>
+                            <constraint firstItem="mME-Hf-LEu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R8f-Yz-ejE"/>
+                            <constraint firstItem="dni-Dd-ahC" firstAttribute="top" secondItem="l7H-RV-4bl" secondAttribute="bottom" constant="5" id="TMm-hf-8CH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ljt-d8-bgu" secondAttribute="trailing" id="XEW-OB-0Mw"/>
+                            <constraint firstItem="bfC-Tt-xiI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YDL-MR-nD9"/>
+                            <constraint firstItem="QSF-5h-nMX" firstAttribute="top" secondItem="3qa-mF-pqb" secondAttribute="bottom" constant="5" id="fBF-Cg-mj7"/>
+                            <constraint firstItem="bfC-Tt-xiI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gr7-DO-DnZ"/>
+                            <constraint firstItem="ljt-d8-bgu" firstAttribute="top" secondItem="jI1-4o-PPg" secondAttribute="bottom" constant="5" id="jcB-s8-Ovz"/>
+                            <constraint firstItem="3qa-mF-pqb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jqU-0e-YEL"/>
+                            <constraint firstItem="jI1-4o-PPg" firstAttribute="top" secondItem="mME-Hf-LEu" secondAttribute="bottom" constant="5" id="pGa-Oi-TJO"/>
+                            <constraint firstItem="dni-Dd-ahC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qXq-WP-acv"/>
+                            <constraint firstItem="ljt-d8-bgu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qc8-H5-v6e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rlx-5k-H63" secondAttribute="trailing" constant="-25" id="qst-AL-gtl"/>
+                            <constraint firstItem="jI1-4o-PPg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v1c-Bf-MMO"/>
+                            <constraint firstItem="ljt-d8-bgu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vxH-TF-scy"/>
+                            <constraint firstItem="3qa-mF-pqb" firstAttribute="top" secondItem="ljt-d8-bgu" secondAttribute="bottom" constant="5" id="wQu-KO-nin"/>
+                            <constraint firstItem="jI1-4o-PPg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xad-fO-Cp4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3qa-mF-pqb" secondAttribute="trailing" id="yyx-iH-6BG"/>
+                            <constraint firstItem="mME-Hf-LEu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zeW-oI-pVj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="betweenText" destination="jI1-4o-PPg" id="3aD-05-uDI"/>
+                        <outlet property="guessesRemaining" destination="3qa-mF-pqb" id="qjA-u2-0lT"/>
+                        <outlet property="highOrLow" destination="QSF-5h-nMX" id="SbJ-hO-gfF"/>
+                        <outlet property="image" destination="Rlx-5k-H63" id="b3j-zb-SiW"/>
+                        <outlet property="inputText" destination="l7H-RV-4bl" id="TbJ-wI-9GW"/>
+                        <outlet property="suggestText" destination="ljt-d8-bgu" id="0T5-zi-BYa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="193"/>
+        </scene>
+    </scenes>
+</document>
